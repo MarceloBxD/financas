@@ -1,8 +1,14 @@
 import React, { useState } from "react";
-import { StyleSheet, View, Text, FlatList } from "react-native";
+import {
+  StyleSheet,
+  View,
+  Text,
+  FlatList,
+  TouchableOpacity,
+} from "react-native";
 import Header from "../../components/Header/index.js";
 import Balance from "../../components/Balance/index.js";
-import { TouchableOpacity } from "react-native";
+import Actions from "../../components/Actions/index.js";
 
 export default function Home() {
   const [showValue, setShowValue] = useState(false);
@@ -30,7 +36,7 @@ export default function Home() {
     <View style={styles.container}>
       <Header name="Cesar Augusto Bracet" />
       <Balance saldo="2.275,90" gastos="437,20" />
-
+      <Actions />
       <Text style={styles.title}>Últimas Movimentações</Text>
       <FlatList
         style={styles.list}
