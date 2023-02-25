@@ -27,21 +27,28 @@ export default function Actions() {
         <View style={styles.areaButton}>
           <AntDesign name="tagso" size={24} color="#000" />
         </View>
-        <Text style={styles.labelButton}>Compras</Text>
+        <Text style={styles.labelButton}>Promoções</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.actionButton}>
         <View style={styles.areaButton}>
           <AntDesign name="barcode" size={24} color="#000" />
         </View>
-        <Text style={styles.labelButton}>Compras</Text>
+        <Text style={styles.labelButton}>Boletos</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.actionButton}>
         <View style={styles.areaButton}>
           <AntDesign name="setting" size={24} color="#000" />
         </View>
-        <Text style={styles.labelButton}>Compras</Text>
+        <Text style={styles.labelButton}>Settings</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.actionButton}>
+        <View style={styles.areaButton}>
+          <AntDesign name="creditcard" size={24} color="#000" />
+        </View>
+        <Text style={styles.labelButton}>Cartões</Text>
       </TouchableOpacity>
     </ScrollView>
   );
